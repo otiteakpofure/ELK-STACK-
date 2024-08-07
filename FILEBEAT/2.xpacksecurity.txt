@@ -1,0 +1,3 @@
+x-PACK is used for security of ELK stack , it provides access control , data integrity and audit trails , it contains SSL/TLS for data in transit and has message authentication. 
+audit trails to check who is accessing your clusters 
+
