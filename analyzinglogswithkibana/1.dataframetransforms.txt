@@ -6,3 +6,4 @@ you can use data transforme either through kibana or an createtransform api
 
 DATA FRAMES 
 through data frames , you can write and instill 
+

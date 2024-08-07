@@ -1,0 +1,13 @@
+                             FILEBEAT 
+FILEBEAT BACKPRESSURE 
+
+It is the reason for allowing logstash and filebeat work together because logstash would not be able to process all the data at each given time 
+
+
+logstash uses persistent queues and ensure no less than two logstash nodes run in your production environment 
+
+persistent queues can also be stored on a disk as well 
+
+in elastic search you need atleast 3 master nodes and nodes to store hot and warm data 
+
+encryptuion should alo be enabled 
