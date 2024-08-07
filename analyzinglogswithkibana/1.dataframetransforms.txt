@@ -1,0 +1,8 @@
+data frame transforms 
+in elastic search , we can use data frames to actually create better aggregation 
+
+you can use data transforme either through kibana or an createtransform api
+
+
+DATA FRAMES 
+through data frames , you can write and instill 

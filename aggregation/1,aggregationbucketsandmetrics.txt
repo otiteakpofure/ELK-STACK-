@@ -1,0 +1,4 @@
+you can also aggregate logs using curl command or histograms  
+
+in aggregation whenusing curl command remember when sending the json request you needs  to use the aggs clause 
+

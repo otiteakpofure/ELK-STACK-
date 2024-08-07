@@ -1,0 +1,31 @@
+understanding query seRCH USING JSON 
+
+curl -xget ipaddress/index/_search?pretty -d "
+
+{
+     "query":{
+        "match":{
+            theputwhatyouaresearchingfor here which is a key value pair 
+        }
+     }
+}
+
+"
+
+
+queries & filters 
+
+Filters for asking yes or no of your data 
+
+queries return data in terms of relevance 
+
+
+use filters when you can because they are cacheable 
+
+to use a filter in your search query a must wil be palced inside 
+
+
+NOT USE QUERY OR FILTER , just remember filter are marked in a filter block and query are marked in a query block , 
+
+
+filter must have 

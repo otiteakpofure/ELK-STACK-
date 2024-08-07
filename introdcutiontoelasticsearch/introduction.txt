@@ -1,0 +1,73 @@
+run  ELASTIC SEARCH ON ubuntu system 
+
+and then we can install json files on elastic search for searching incase 
+
+NOTE : AVAST can also affect virtual box 
+
+
+INSTALLING ELASTIC SEARCH 
+
+NOTE: OSBOXES are used for ubuntu 
+
+after isntalling the ubuntu image , then now to install  elasticsarch ,headover to http://media.sundog-soft.com/es8/install.txt
+and the place in all the commands stated in the homepage  and you can do it with docker image 
+
+
+after finishing doing this and after writing sudo apt install elastic search , then the open the foniguration files and 
+do the following under the 
+nodename = uncomment it 
+
+network host change it to: to the machine you want to run it whether local host or a remote machine 
+
+then uncomment discovery.seed.hosts:  and change host 1 to the local host machine 
+
+
+ discovery.seed.hosts: [the ip address of the machine you are running it ]
+
+
+and change xpack.security.enable: false = which is security enabled by default 
+
+then change cluster.initalmasternode = ["node-1"] = equals to the host where you will run elastic search from 
+
+
+
+and increase the dfault time out on elastics search so run the following command 
+
+systemd/system/nameoftheservice
+
+for example elasticsearch.service 
+
+underthetimeoutstartsec increase the timeout towhaterver you want 
+
+
+TO ENABLE A PARTICULAR SERVICE ON LINUX TO ALLOW A PROGRAM START RUNNING WHEN THE SYSM BOOTS , THE FOLLOWING SHOULD BE DONE 
+
+- sudo /bin/systemctl daemon reload 
+-  sudo /bin/systemctl enable elasticsearch.service 
+
+then after wrting the command you do 
+
+-sudo /bin/systemctl start elasticsearch.service 
+
+if you want to get a response maybe from a webserver , you can use the following 
+
+curl -XGET andthenameoftheip address and this ipaddress returns the a json file 
+
+after fecthing the request from the json 
+
+and then to send a data to elastic search and any other service , the following command 
+
+curl -H " content-type: application/json" XPUT placeipaddress/createanydirectory --data-binary @placethenameofhtejsonhere 
+
+NOTE: THIS COMMAND IS USED TO INDEX THINGS IN THE DIRECTORY 
+
+TO SEND A BULK OF THE MESSAGE WHETHER JSON OR FILES USE , 
+
+curl -H " content-type: application/json" XPUT placeipaddress/createanydirectory/_bulk --data-binary @placethenameofhtejsonhere 
+
+
+
+
+you can use curl to search for data in a json file 
+
+NOTE: PLEASE DO NOT TURN OFF THE SECURITY IN ELASTIC SEARCH 

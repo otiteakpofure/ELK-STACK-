@@ -1,0 +1,16 @@
+elastic search is made up of computer of shards and these shards are clusters 
+these clusters,  and they can scaled uo easily and these shards are just lucene 
+ELastsic SEARCH works like kubernetes 
+NOTE: THE NUMBER OF PRIMARY SHARDS CANNOT BE CHANGED 
+
+SO YOU HAVE TO STATE IT IN THE PUT REQUEST THE NUMBER OF SHARDS YOU WANT 
+
+SO IJ ELASTI SEARCH , YOU CAN USE THE NUMBER OF SHARDS TO REPRESENT YOUR PRIMARY SHARD 
+and the replicas to represent your copies of those shards 
+
+so if you state a put request and you state number of shards to be 3 and replicas is 1 
+ 
+
+ it will be 3 primary shards and 1 replicases of each shards
+ there making everything 6 
+ 

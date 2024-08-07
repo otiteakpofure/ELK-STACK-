@@ -1,0 +1,16 @@
+you can query your data using sql 
+
+you can use sql om elasgtic search 
+
+
+                                         KIBANA CANVAS 
+
+Kibana canvas presentation is like powerpoitn 
+in kibana anvas we use workpads and these pads are made up of pages and they put elements into tthis pages which shows in workpads 
+ 
+ in canvas elasticsearch SQL is used  or documents which are imported 
+
+
+
+                             ELASTICSEARCH AND APAPCHE HADOOP 
+WHEN WE HAVE BILLIONS OF DATA AND SERVICES , HADOOP IS best to be used for data processing  of big volumes 

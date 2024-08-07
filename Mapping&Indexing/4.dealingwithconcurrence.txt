@@ -1,0 +1,16 @@
+     DEALING WITH CONCUREENCY 
+This  problem occures when you have many client hitting at your server at the same time 
+
+to solve it do the following 
+                          OPTIMISITC CONCURRENCY CONTROL 
+for example you have many elastic search client that wants to talk to the databse and retreieve information and as well updateb
+that particular information this control helpes tonprevent confkichst assocaited wth the each clients 
+
+for example you want to also  make an update to document and ensure the version doesnt change 
+
+yu can do the following in elastic search so to do such 
+
+curl -xput ipaddress/thenameoftheindex/_doc/theid?if_seq_no=thesequqnceyouwanttorestrictitto & if_primary_term=theprimary -d ""
+
+
+NOTE: ALL COMMAND ABOVE ARE MANUAL BY ADDING THE retry_on_conflict paramter 

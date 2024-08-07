@@ -1,0 +1,4 @@
+                         ELASTIC SEARCH SERVICE 
+ELASTIC Search is made up of two things 
+documents  = documents is a row in the index 
+inddex = this is a table in the elasticsearch database and the document is in the tablle

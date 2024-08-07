@@ -1,0 +1,68 @@
+so we have to install kibana 
+
+sudo apt-get install kibana
+sudo vi /etc/kibana/kibana.yml
+    change server.host to 0.0.0.0
+
+sudo /bin/systemctl daemon-reload 
+sudo /bin/systemctl enable kibana.service 
+sudo /bin/systemctl start kibana.service
+
+
+kibana works on port 5601 
+
+NOTE: WHEN INSTALLING KIBANA AND elasticsearch PLEASE ENSURE THEIR VERSIONS ARE THE SAME 
+
+TO CHECK THE VERSION OF elasticsearch RUN CURL -XGET IPADDRESS:PORTNUMBER 
+                        KIBANA RUN  sudo apt list kibana 
+
+    after intalling kibana then run 
+
+    sudo nano /etc/kibana/kibana.yml and then change the server.host to 0.0.0.0 
+
+
+
+                                             PLAYING WITH KIBANA 
+
+TO see data ,  we should go to stack management and click on data views and create a data view 
+
+
+DISCOVER MODE 
+AND YOU CAN CREATE VISUALIZATION 
+
+
+you can use lens to create graohds and histigrams  
+
+
+you can also use developer tools  
+
+
+
+
+                                            EXPLORING DATA WITH KIBANA 
+when yiu enter kibana dashboard click on visualization to create a new visualization from the data loaded 
+
+
+                                                   KIBANA LENS
+    nproc = helps to show system cores 
+    free -h = for memory space 
+
+You can use metric beats to collect system informationon a linux systm by installing it and then using kibana lens to visualize it  
+
+you can data view to seperate the logged files into various parts and then you can visualization to choose the part of the date you wanna see from the data views 
+amd you can use drag and drop on the visualization data board and after visualizing you can save  
+
+
+
+                                                       KIBANA MANAGMENT 
+apart from kibana visual data it can still manage elastic search by using the following 
+
+1. spaces= organize dahsboard , visualization and saved objects and mangaging users and access to multiple spaces fpr isers 
+2. migrating visualization 
+3. advanced settings such as dark mode and light mode 
+
+
+we go to stack management and go to kibana session and underspaces we can filter who can see the data under feature visibility 
+
+spaces means to allow a certain groips see what other people cannot see 
+you can choose the url in adc=vance settings when user login into their kibana dashboard 

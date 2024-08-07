@@ -1,0 +1,26 @@
+analyser and tokenizer to help text search what this means in elastic search is that is used either as a full text search or a partial search 
+
+for exact word search you use the keyword type 
+
+
+
+to ensure better seacrh then you use the mapping keyword 
+
+curl -xput ipaddress/theindex -d "
+
+{
+    "mappings":
+    [
+        properties:
+        state all your mapping hered 
+    ]
+}
+"
+
+
+to search for text after writing your mappings you can do the following 
+
+curl -xget ipaddress/index/_search/pretty -d "
+
+
+"

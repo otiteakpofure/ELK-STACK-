@@ -1,0 +1,57 @@
+you can install logstash using the following 
+
+sudo apt install openjdk-8-jre-headless
+sudo apt-get update
+sudo apt-get install logstash 
+
+8 means java 8 please check for more update of java 8 
+
+then after installing logstash , the configuration file has to be run to do whatever we want 
+to do this do the following 
+
+sudo vi /etc/logstash/conf.d/logstash.conf
+
+and then write the configiration file 
+
+
+NOTE: All this works on ubuntu 
+
+
+                               RUNNING LOGSTASH 
+
+TO run logstash , we need to go to the following directory 
+
+cd /usr/share/logstash/
+
+sudo bin/logstash -f /etc/logstash/conf.d/logstash.conf 
+
+after running logstash , you can get the logs out of it by running curl -xget ipaddress/ _cat/indices?v 
+
+NOTE: when you dont state the nema of the log  elasticsearch utomatically creates a index name for your logs 
+and you can find this using the date when you sent in the log 
+
+
+
+
+LOSSTASH AND SYSLOG 
+
+TO get logs from all your n
+
+1. USING SYSLOG DAEMON TO SEND LOGS THROUGH TCP CONNECTION 
+ forwarding to logstash using syslog , has the ability to send and logstash has the ability to open tcp port 
+
+
+ first open the logstash tcp port in losgtash on port 10541 to do this 
+
+ use sudo nano  /etc/rsyslog.d/50-default.conf 
+
+ and in the file do the following 
+
+ before the auth authoriy write 
+ *.* = means all messages    @@ipadress:10514 = the syslog port 
+
+ and the restart the syslog service 
+
+ sudo systemctl restart  rsyslog.service 
+
+ 

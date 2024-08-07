@@ -1,0 +1,59 @@
+                  DATA MODELLING AND PARENT CHILD RELATIONSHIP
+
+TO ALLOWS aprent and child relationship under the mappings , you use the type = join to do so . 
+
+and you can also write in the jsob file by writing parent = 1 or any number you choose 
+
+
+
+
+                                    FLATTENED DATATYPE 
+
+
+MAPPING EXPLOSIONS IS WHEN THERE ARE TOO MAY FILEDS IN A JSON DOCUMENT 
+
+TO PREvent mapping explosions we use the flattened datatype 
+
+                   CLUSTER STATE 
+You can also get the cluster state of shards 
+
+
+                                       ELASTICSEARCH CLUSTER 
+
+ The elasticsearch cluster is a collection of nodes used for node management 
+
+
+
+
+                                            CREATING AN INDEX 
+In creating an index , you can do the following 
+
+
+curl -xput "theipaddress/thenameoftheindex"
+
+
+to do a flattend type you can do the following 
+
+
+curl -XPUT "theipaddress/thenameoftheindex/_mapping" -d {
+
+    "properties":{
+        "host":{
+            "type":"flattened"
+        }
+    }
+}
+
+
+
+    NOTE: FLATTENED TYPE DOES NOT HAVE PARTIAL MATCHING IT MUST BE EXACT 
+    
+
+
+
+
+
+
+
+
+

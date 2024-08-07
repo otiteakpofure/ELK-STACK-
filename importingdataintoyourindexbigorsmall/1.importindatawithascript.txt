@@ -1,0 +1,26 @@
+importing data into elastic search 
+
+
+
+importing via script/json 
+
+this script is to send data from any point to elastic search 
+
+you can use python script 
+
+
+
+Importing via clients APIs 
+
+you can use elastic search libraries for any languages 
+
+
+
+
+
+                               IMPORTING WITH LOGSTASH 
+LOGSTASSH CAN IMPORT DATA FROM ANYWHERE IT CAN ALSO PUT IT INTO ANWYEHERE 
+
+IT CAN IMPORT 
+
+

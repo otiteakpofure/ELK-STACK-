@@ -1,0 +1,3 @@
+in real word you connect to elastic search using ssh 
+
+first open port 22 using you can do this on any virtual machine by clicking network setting advance and creating a rule , click o port forwarding rules 

@@ -1,0 +1,29 @@
+to uodate document which already exist on elastic search which has an index can be updated using the a_version field number 
+the number which is updated is gitten from the exact document you saw and you want to change it 
+
+so for example the index is 5 and you want to change 5 but in elastic search you have to increase the number to 6 
+
+
+
+
+DELETING DATA IN ELASTIC SEARCH 
+
+TO delte a document in elastic use the curl command  delete 
+
+to update a particular filed in json document for elasrics 
+
+
+
+INSERT DATA IN ELASTIC SEARCH 
+
+IF YOU USING CURL 
+
+TO INSERT DOING THIS in elasticsearch
+
+CURL -XPUT IPADDRESS /NAMEOFTHEINDEX/-doc/thenumberoftheindex?pretty -d " "
+
+-doc used to insert a document in elastic search 
+
+To UPDATE  
+'curl -xpost theipaddress /index/-doc/theidnumber/_update -d ""
+

@@ -1,0 +1,12 @@
+                           query-line search
+you use a quqry lite to ensure your search is good 
+
+you should not use querylite in production environment but you can query parts of the url 
+
+to search your elastic search using query lite 
+
+curl -xget ipaddress/index/_search?q=thejsonyouwannasearch 
+for example,
+
+curl -xget ipaddress/index/_search?q=title:star&pretty 
+

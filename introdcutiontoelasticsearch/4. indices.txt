@@ -1,0 +1,11 @@
+ Elasitc search works in document using the document frequency 
+
+ TF = TERM FREQUENCY 
+ DF = DOCUMENT FREQUENCY 
+
+ The term frequency talks about a word is common in a document 
+ document frequency means how a may document has that word 
+
+ TFDF meausre the relevenace of the term in a document 
+
+ 

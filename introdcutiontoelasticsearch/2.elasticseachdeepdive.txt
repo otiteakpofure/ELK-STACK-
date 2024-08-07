@@ -1,0 +1,16 @@
+it is scalable of the lucene scablable network 
+
+it is basially handling json request on the #
+
+it is also has kibana which sits upon elastic search 
+
+logstast/beats frameowkr = used for publsihig data into elastic search 
+
+x-pack = used for securigty , alerting , monitoring , graph exploration 
+
+ 
+
+ to interact 
+
+
+ 

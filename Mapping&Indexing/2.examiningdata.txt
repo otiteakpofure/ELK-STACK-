@@ -1,0 +1,17 @@
+creating mapping 
+
+allow elastic search to store data 
+
+importing document to elastic search 
+
+
+inserting many documents to elastics search 
+
+to insert bulk data into elasticsearch 
+
+curl - xput ipaddresss/bulk -d ( which means the body of the request)
+
+--data-binary @ thenthefilename
+
+--date-binary = allows you to insert a file from curl instead of typing it by hand 
+
