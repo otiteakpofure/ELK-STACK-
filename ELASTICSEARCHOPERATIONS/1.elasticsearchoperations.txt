@@ -1,0 +1,10 @@
+                        CHOOSING YOUR SHARDS 
+CHOOSING PRIMARY NUMBER OF SHARDS 
+
+In choosin shards look at the primary shards at most times, befor write and replica shards can be for reads and 
+this determine the amount of shards you need and also your organization needs 
+
+or another start a shard on a single server with no replication and fill it with documents and then run large amount of queries till it breaks and then you can determine how many primary shards you need
+
+
+

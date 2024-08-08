@@ -1,0 +1,37 @@
+ how can i add an index 
+
+ you can create a new index by dong the following 
+
+ PUT /new_index
+ {
+    "settings": {
+        "number_of_shards": place the nyumber here,
+        "number_of_replicas": place the number of replicas here 
+    }
+ }
+
+ or you can use index templates 
+
+ you can do this on your kibana dashboards and before you do this check if there is an existing shards 
+
+ by running this command on the kibana console 
+
+ GET thenameoftheindes/_settings 
+ lets say the index is man 
+
+ GET man/_settings 
+
+
+
+ so to put a new index in kibana dashboards
+
+ for example the new index is testindex , you can run the command on the kibana dahsboard 
+
+ 
+ PUT /testindex 
+ {
+    "settings": {
+        "number_of_shards": 4,
+        "number_of_replicas": 1
+    }
+ }

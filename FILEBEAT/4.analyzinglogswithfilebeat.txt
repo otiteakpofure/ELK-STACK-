@@ -5,3 +5,14 @@ cd /usr/share/filebat
 sudo filebeatr setup --dashboards
 
 NOTE: KIbana works with the last 15 minutes of data and as such under the data views from stack management , 
+
+
+USING KIBANA dashboards
+
+YOU CAN USE DASHBOARDS FROM KIBANA TO  showcase the visual representation of your logs by using filters of the logs 
+
+
+
+
+
+ 
