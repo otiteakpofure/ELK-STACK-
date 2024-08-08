@@ -1,0 +1,7 @@
+to use filebeat first dashboards needs to be installed , to do this 
+
+cd /usr/share/filebat 
+
+sudo filebeatr setup --dashboards
+
+NOTE: KIbana works with the last 15 minutes of data and as such under the data views from stack management , 

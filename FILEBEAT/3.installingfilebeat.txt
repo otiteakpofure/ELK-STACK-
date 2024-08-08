@@ -6,3 +6,15 @@ and then enable the file you want
 
 when you open the above file path  you can then run the following 
 
+for exampple if you want to check apache logs and most of the files are disabled 
+
+so for example, apache.yml.disabled , you will have to run mv apache.yml.disabled to apache.yml so the logs can be sent 
+and then open the file apache.enable and enable the access: 
+                                                     enabled: from false to true 
+
+                                                     as well as the error: 
+                                                                     enabled: true 
+and then change the path to the error logs and var.path to the path which will be sent to filebeat 
+
+so for example,  var.paths: ["/home/student/logs/access*"]
+
