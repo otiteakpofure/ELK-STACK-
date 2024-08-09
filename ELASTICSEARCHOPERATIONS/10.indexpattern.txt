@@ -1,0 +1,32 @@
+types of index changes 
+
+1. index settings 
+2. sharding 
+3. primary data 
+4. low level 
+
+elk stack has two settings which can be explicityl defined when creating an index 
+and these includes 
+
+1.dynamic settings  which can be changed after index creation 
+2. static settings  cannot be changed  which number of shards and codec ( which is the compression scheme of the data )
+
+
+
+primary shards cannot be changed on the fly 
+replica shards can be changed on the fly
+
+to reduce the number of shards 
+
+POST /{source-index}/_shrink/{placetheindexname}
+
+increase 
+
+POST /{source-index}/_split/{placetheindexname}
+
+
+rollups
+
+helps to use old data for long-term storage 
+
+ 

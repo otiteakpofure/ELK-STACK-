@@ -1,0 +1,12 @@
+the default heap size is 1GB FOR ELASTICSEARCH 
+
+THE HEAP SIZE should not interfere with the size set for elastic search so that issues will not happen 
+
+to set the heap in elastic search , you can do the following 
+
+export ES_HEAP_SIZE = 10g 
+
+or ES_JAVA_OPTS = "-xms10g -xms10g" ./bin/elasticsearch 
+
+
+NOTE: DO not cross 32gb 

@@ -1,0 +1,23 @@
+NODE SETUP 
+
+TO BACK UP your data using elasticsearch go to the elasticsearch under 
+
+/etc/elasticsearch/elasticseach.yml and then create the folllwing 
+
+path.repo: ["home/usermamechosen/backups"]
+
+and then run a curl command to save the backup date using a curl command  
+
+you can make changes to the sudo file 
+
+
+BOOTSTRAP CHECKS 
+
+ELASTIC SEARCH only does bootstrap checking on production mode and hence the need to actually be attachced to a loopback address 
+
+
+JVM SETTINGS 
+IN THE jvm options the memory setting should be changed  which is used for lowering the heap size 
+
+
+FILE DESCRIPTOR CHECKS , MEMORY CHECKS 

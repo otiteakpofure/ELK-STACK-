@@ -1,0 +1,6 @@
+             x-pack 
+to put monitoring of x-pack 
+
+you can click on the heartbeat which is the kibana dashboard andthen set uo the monitoring 
+
+if you want more security from xpack , you will have to pay for more services 

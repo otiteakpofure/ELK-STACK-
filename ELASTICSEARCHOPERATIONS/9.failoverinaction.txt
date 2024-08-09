@@ -1,0 +1,2 @@
+failover is simply creating various nodes on a virtual machine and allowing those machine to take over when a node dies in your elk cluster 
+for example you can create 3 nodes and when the master node dies elk stack automatically knows which it can assign the new master node to 

@@ -1,0 +1,20 @@
+you can create varius index and spread the search request across such indices to allow scalability of search 
+
+you can do this by using logstash since logstash usese index for ever data its collects by creating indexes or by using index aliases 
+
+you can do this by using the following command 
+
+POST /_aliases
+{
+    "actions": [
+        { "add": {"alias":}"statesthenameofhteloghere", "index": "thedateofthelogs}},
+        { "remove": {"alias":}"statesthenameofhteloghere", "index": "thedateofthelogs}},
+    ]
+}
+
+or optionally 
+
+DELETE the logs 
+
+
+

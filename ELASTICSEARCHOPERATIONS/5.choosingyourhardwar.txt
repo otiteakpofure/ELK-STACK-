@@ -1,0 +1,8 @@
+with elastci seach RAM  is usually your bottle neck so the more ram you have the more you can work easily 
+
+using 64gb per machine is a good spot for your elastic search 
+32gb for elasitc seacrh 
+32gb for OS/ disk cache for lucene
+
+
+

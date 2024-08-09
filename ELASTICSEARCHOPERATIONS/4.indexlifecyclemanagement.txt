@@ -1,0 +1,13 @@
+                  index lifecycle management  
+ELK stack has a policy management scheduel and this schedule define how the stack life is for example 
+
+the policy lifeclye includes 
+HOT = more quereies and its updates 
+WARM  = less queries and infrequent updates
+COLD  = zero to very minimal queries and little or no updates at all
+FROZEN = no updates / queries 
+DELETE = removing the cluster entirely 
+
+
+you then add this policies to the index when creating it oj the kibana dashboard 
+

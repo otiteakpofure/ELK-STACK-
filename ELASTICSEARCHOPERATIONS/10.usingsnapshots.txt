@@ -1,0 +1,25 @@
+to perform snapshots watch ths snapshots video on how you can do various types of snapshot on elasticsearch 
+
+to do this elastic search do the following 
+
+open the elasticsearch.yml file 
+
+and then create a path.repo variable and for example you want to store it in the home folder you can do thenfollowing 
+
+path.repo= ["home/students/backups"] = this shows the location in which the backup will be stored 
+
+ alternatively you can do this on the kibana dashboard using 
+
+ PUT _snapshot/givethenameofthebackuphere 
+ {
+    "type":"fs"'
+    "settings":{
+        "location":"loatioofthewhereyouwanttostorethebackups/nameofthebackup
+    }
+ }
+
+ so afte that kick off the snapshot 
+
+ PUT _snapshot/givethenameofthebackuphere/CREATETHESNAPSHOTNAMEHERE to officially kickstart the kick off procss in kibana 
+
+ 
